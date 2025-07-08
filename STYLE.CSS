@@ -1,0 +1,71 @@
+/* style.css */
+
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a.activo,
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Encabezado */
+header h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Selector y botón */
+.selector-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+}
+
+/* Tabla de datos */
+.tabla-container {
+  padding: 20px;
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #eee;
+  margin-top: 40px;
+}
+
+/* Estilos para errores */
+.input-error {
+  border: 2px solid red;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}

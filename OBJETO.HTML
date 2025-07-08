@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crear Publicación</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Script principal -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navegación -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="base.html">Inicio</a></li>
+        <li><a href="usuarios.html">Crear Usuario</a></li>
+        <li><a href="objeto.html" class="activo">Crear Publicación</a></li>
+      </ul>
+    </nav>
+    <h1>Formulario: Crear Publicación</h1>
+  </header>
+
+  <!-- Formulario -->
+  <main>
+    <form id="formPost" class="formulario">
+
+      <label for="userId">ID Usuario *</label>
+      <input type="number" id="userId" name="userId" required />
+      <span class="error" id="errorUserId"></span>
+
+      <label for="title">Título *</label>
+      <input type="text" id="title" name="title" required />
+      <span class="error" id="errorTitle"></span>
+
+      <label for="body">Contenido *</label>
+      <textarea id="body" name="body" rows="4" required></textarea>
+      <span class="error" id="errorBody"></span>
+
+      <!-- Botones -->
+      <div class="botones">
+        <button type="button" id="btnCancelarPost">Cancelar</button>
+        <button type="submit" id="btnGuardarPost">Guardar</button>
+      </div>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>WebApp creada para Evaluación Unidad 3 - FrontEnd</p>
+  </footer>
+
+</body>
+</html>

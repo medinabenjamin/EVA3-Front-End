@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio - WebApp</title>
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- DataTables CSS (para las tablas con estilos y funcionalidad) -->
+  <link href="https://cdn.datatables.net/v/dt/dt-2.3.2/datatables.min.css" rel="stylesheet" />
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- DataTables JS -->
+  <script src="https://cdn.datatables.net/v/dt/dt-2.3.2/datatables.min.js"></script>
+</head>
+<body>
+
+  <!-- Encabezado general -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="usuarios.html">Crear Usuario</a></li>
+        <li><a href="objeto.html">Crear Objeto</a></li>
+      </ul>
+    </nav>
+    <h1>Sistema De Gestión De Usuarios</h1>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <section class="selector-container">
+      <label for="selector">Selecciona tipo de datos:</label>
+      <select id="selector">
+        <option value="users">Usuarios</option>
+        <option value="posts">Publicaciones</option>
+        <option value="comments">Comentarios</option>
+        <option value="todos">Tareas</option>
+      </select>
+
+      <button id="cargarDatos">Cargar Datos</button>
+    </section>
+
+    <section class="tabla-container">
+      <table id="tablaDatos" class="display" style="width:100%">
+        <thead>
+          <!-- Se llenará dinámicamente -->
+        </thead>
+        <tbody>
+          <!-- Se llenará dinámicamente -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>WebApp creada para Evaluación Unidad 3 - FrontEnd</p>
+  </footer>
+
+  <!-- Script JS principal -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
+
